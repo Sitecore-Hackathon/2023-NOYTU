@@ -1,0 +1,41 @@
+@import "@sass/abstracts/mixins";
+@import "variables";
+
+footer {
+  margin: 0px auto 64px auto;
+
+  @include respond-to(mobile-large) {
+    padding-top: 0;
+  }
+  .container-dark-background {
+    background-color: #262626;
+  }
+
+  .contacts {
+    font-size: $text-size-14;
+
+    a {
+      color: $text-white;
+    }
+
+    p, span {
+      color: $text-white;
+    }
+  }
+
+  .indent-inner {
+    padding: 65px;
+
+    @include respond-to(mobile-large) {
+      padding: 40px 0;
+    }
+  }
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1110px;
+}

@@ -1,0 +1,55 @@
+.person__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1110px;
+  height: 445px;
+  margin-bottom: 88px;
+
+  .person__image {
+    img {
+      border-radius: 50%;
+      width: 445px;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  .person__description {
+    width: 540px;
+    height: 306px;
+
+    .description-title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 50px;
+      color: $black;
+      padding-bottom: 34px;
+    }
+
+    .description-content {
+      width: 540px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: $medium_brown;
+      text-align: left;
+      padding-bottom: 32px;
+    }
+  }
+
+  .person__link {
+    color: $white;
+    height: 56px;
+    border-radius: 25px;
+    padding: 14px 45px;
+    text-decoration: none;
+    background-color: $light_red;
+    border: 1px solid $light_red;
+    transition: all .5s ease-out;
+
+    &:hover {
+      background-color: $white;
+      color: $light_red;
+    }
+  }
+}
